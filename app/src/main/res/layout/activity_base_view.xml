@@ -5,15 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".BaseViewActivity">
 
-    <Button
-        android:id="@+id/bt_base_view"
-        style="@style/base_bt"
-        android:text="基本View" />
+    <com.aline.myviews.BaseView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/bt_base_anim"
-        style="@style/base_bt"
-        android:text="基本动画" />
 </LinearLayout>
