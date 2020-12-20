@@ -46,6 +46,24 @@ public class BaseView extends View {
         paint.setStyle(Paint.Style.STROKE);
 //        canvas.drawPoint(100, 100, paint);
 
+        //设置画布即背景颜色
+        canvas.drawRGB(96, 96, 96);
+
+        //画圆
+//        paint.setStyle(Paint.Style.FILL);
+//        paint.setStrokeWidth(20);
+//        canvas.drawCircle(190,200,150,paint);
+
+        //画一个线，线的宽度与setStrokeWidth有关，与style无关
+//        paint.setColor(Color.RED);
+//        paint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        paint.setStrokeWidth(20);
+//        canvas.drawLine(100,100,200,300,paint);
+
+        //画一个点
+        paint.setStrokeWidth(20);
+        canvas.drawPoint(100, 100, paint);
+
         //画矩形
 //        paint.setStyle(Paint.Style.STROKE);
 //        canvas.drawRect(10, 10, 100, 100, paint);
