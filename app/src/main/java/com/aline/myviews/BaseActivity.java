@@ -2,6 +2,7 @@ package com.aline.myviews;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,4 +26,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected abstract void initView();
 
+    public void showToast(String txt) {
+        Toast.makeText(getApplicationContext(), txt, Toast.LENGTH_SHORT).show();
+    }
 }

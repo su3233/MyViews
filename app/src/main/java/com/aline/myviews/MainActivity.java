@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.aline.myviews.anim.AnimActivity;
+import com.aline.myviews.anim.ValueAnimatorActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void initView() {
         findViewById(R.id.bt_base_view).setOnClickListener(this);
         findViewById(R.id.bt_base_anim).setOnClickListener(this);
+        findViewById(R.id.bt_value_anim).setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +31,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.bt_base_anim:
                 startActivity(new Intent(MainActivity.this, AnimActivity.class));
+                break;
+            case R.id.bt_value_anim:
+                startActivity(new Intent(MainActivity.this, ValueAnimatorActivity.class));
                 break;
         }
     }

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BaseViewActivity"></activity>
+        <activity android:name=".anim.ValueAnimatorActivity"></activity>
+        <activity android:name=".BaseViewActivity" />
         <activity android:name=".anim.AnimActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

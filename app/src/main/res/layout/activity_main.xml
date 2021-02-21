@@ -16,4 +16,9 @@
         android:id="@+id/bt_base_anim"
         style="@style/base_bt"
         android:text="基本动画" />
+
+    <Button
+        android:id="@+id/bt_value_anim"
+        style="@style/base_bt"
+        android:text="value动画" />
 </LinearLayout>
